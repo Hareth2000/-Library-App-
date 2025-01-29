@@ -1,0 +1,29 @@
+/* Footer.css */
+.footer-container {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  .footer-container p {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  /* Animation for footer sliding up */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,61 @@
+.about-container {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;  
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .about-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-out; 
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    animation: fadeInText 2s ease-out; 
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
