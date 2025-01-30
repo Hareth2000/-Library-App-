@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // إضافة useNavigate
+import { Link, useNavigate } from 'react-router-dom'; 
 import { auth } from '../firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const navigate = useNavigate(); // تهيئة دالة التنقل
+  const navigate = useNavigate();   
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -24,7 +24,7 @@ const Navbar = () => {
       .then(() => {
         setIsLoggedIn(false); 
         alert("Logged out successfully");
-        navigate('/'); // توجيه المستخدم إلى الصفحة الرئيسية بعد تسجيل الخروج
+        navigate('/'); 
       })
       .catch((error) => {
         console.error('Error during logout:', error);
